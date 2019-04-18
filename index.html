@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>To Do List - Vanilla JS</title>
@@ -11,9 +12,14 @@
     <main>
         <h1>A To Do List in Vanilla JavaScript</h1>
 
+        <div id="task-list">
+            <h1>Task List</h1>
+            <p>No task added.</p>
+        </div>
+
         <form action="">
             <fieldset>
-                <legend>Task Infos</legend>
+                <legend>Add Task</legend>
                 <p>
                     <label for="task-name">Task Name</label>
                     <input type="text" name="task-name" id="task-name">
