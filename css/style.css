@@ -23,10 +23,33 @@ h1{
     padding-left: 14px;
 }
 
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    display: none;
+}
+
+tr:first-child{
+    background-color: #575757;
+    color: #d4d4d4;
+}
+
+th{
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid #575757;
+
+}
+
+td{
+    padding: 5px;
+    border: 1px solid #575757;
+}
+
 #task-list>p{
-    background-color: #7db0d3;
-    color: #155f91;
-    border: 1px solid #155f91;
+    background-color: #575757;
+    color: #d4d4d4;
 }
 
 form{
@@ -37,6 +60,8 @@ form{
 fieldset{
     text-align: left;
     padding-bottom: 0;
+    border: 2px solid #646464;
+    border-radius: 5px;
 }
 
 legend{
@@ -67,4 +92,5 @@ button{
     border-radius: 30px;
     line-height: 15px;
     text-align: center;
+    cursor: pointer;
 }

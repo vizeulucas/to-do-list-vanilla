@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>To Do List - Vanilla JS</title>
 </head>
@@ -14,29 +14,38 @@
 
         <div id="task-list">
             <h1>Task List</h1>
-            <p>No task added.</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Description</th>
+                </tr>
+            </table>
+            <p id="no-task">No task added.</p>
         </div>
 
         <form action="">
             <fieldset>
                 <legend>Add Task</legend>
                 <p>
-                    <label for="task-name">Task Name</label>
-                    <input type="text" name="task-name" id="task-name">
+                    <label for="name">Task Name</label>
+                    <input type="text" name="name" id="name">
                 </p>
                 <p>
-                    <label for="task-time">Task Time</label>
-                    <input type="time" name="task-time" id="task-time">
+                    <label for="time">Task Time</label>
+                    <input type="time" name="time" id="time" value="00:00">
                 </p>
                 <p>
-                    <label for="task-description">Task Description</label>
-                    <textarea name="task-description" id="" cols="30" rows="10"></textarea>
+                    <label for="description">Task Description</label>
+                    <textarea name="description" id="" cols="30" rows="10" maxlength="35"></textarea>
                 </p>
                 <p>
-                    <button>Add Task</button>
+                    <button class="add-button">Add Task</button>
                 </p>
             </fieldset>
         </form>
     </main>
+    <script src="js/createItensTable.js"></script>
+    <script src="js/taskManager.js"></script>
 </body>
 </html>
